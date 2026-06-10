@@ -1,39 +1,140 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Potato Pops</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potato Pops</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      text-align: center;
+    }
 
-body{
-    background:#f8f3ea;
-    font-family:Arial, sans-serif;
-}
+    header {
+      background: #fff3e0;
+      padding: 20px;
+    }
 
-.container{
-    width:100%;
-}
+    .logo {
+      width: 180px;
+    }
 
-.container img{
-    width:100%;
-    display:block;
-    height:auto;
-}
-</style>
+    /* VIDEO */
+    .video-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 30px auto;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    /* BUTTON */
+    .order-btn {
+      display: inline-block;
+      margin: 20px;
+      padding: 15px 30px;
+      background: #25D366;
+      color: white;
+      font-size: 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* INSTAGRAM */
+    .instagram {
+      display: block;
+      margin-bottom: 20px;
+      color: #E1306C;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* MENU */
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      width: 280px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    footer {
+      padding: 15px;
+      background: #333;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
-    <img src="landing-page-potato-pops.png" alt="Potato Pops">
+<header>
+  <!-- LOGO SESUAI FILE -->
+  <img src="logo.png.jpeg" class="logo">
+</header>
+
+<!-- VIDEO SESUAI FILE -->
+<div class="video-container">
+  <video controls autoplay muted loop>
+    <source src="potato.mp4.mp4" type="video/mp4">
+  </video>
 </div>
+
+<!-- ORDER -->
+<a class="order-btn" href="https://wa.me/6283153392024?text=Halo%20saya%20mau%20order%20Potato%20Pops" target="_blank">
+  🛒 Order Sekarang (WhatsApp)
+</a>
+
+<!-- INSTAGRAM -->
+<a class="instagram" href="https://instagram.com/potatopops.id" target="_blank">
+  📸 Follow Instagram @potatopops.id
+</a>
+
+<!-- MENU -->
+<div class="container">
+
+  <div class="card">
+    <img src="original.jpg.jpeg">
+    <h3>Original Cheese</h3>
+  </div>
+
+  <div class="card">
+    <img src="chicken.jpg.jpeg">
+    <h3>Chicken Cheese</h3>
+  </div>
+
+  <div class="card">
+    <img src="beef.jpg.jpeg">
+    <h3>Beef Cheese</h3>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Potato Pops
+</footer>
 
 </body>
 </html>
