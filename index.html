@@ -2,180 +2,124 @@
 
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>potatopops.id</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>potatopops.id</title>
 
-  <!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+body{background:#fff8ef;}
 
-    body {
-      background: #fff8ef;
-      color: #333;
-    }
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 50px;
+}
 
-    /* NAVBAR */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 50px;
-      align-items: center;
-    }
+nav img{width:120px;}
 
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #333;
-    }
+nav ul{
+  display:flex;
+  list-style:none;
+}
 
-    .btn {
-      background: #ffb300;
-      padding: 10px 20px;
-      border-radius: 20px;
-      color: white;
-    }
+nav ul li{
+  margin:0 15px;
+}
 
-    /* HERO */
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 50px;
-      flex-wrap: wrap;
-    }
+nav ul li a{
+  text-decoration:none;
+  color:#333;
+}
 
-    .hero-text {
-      max-width: 500px;
-    }
+.btn{
+  background:#ffb300;
+  padding:10px 20px;
+  border-radius:20px;
+  color:white;
+}
 
-    .hero-text h1 {
-      font-size: 50px;
-      color: #ff9800;
-    }
+/* HERO */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:60px;
+  flex-wrap:wrap;
+}
 
-    .hero-text p {
-      margin: 20px 0;
-    }
+.hero-text h1{
+  font-size:70px;
+  color:#ff9800;
+}
 
-    .hero img {
-      width: 400px;
-    }
+.hero-text p{
+  margin:20px 0;
+}
 
-    /* FITUR */
-    .fitur {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin: 40px;
-      flex-wrap: wrap;
-    }
+.hero img{
+  width:400px;
+}
 
-    .fitur-box {
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
-      width: 200px;
-      text-align: center;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
+/* SECTION */
+section{padding:60px;text-align:center;}
 
-    /* ABOUT */
-    .about {
-      display: flex;
-      padding: 50px;
-      gap: 30px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
+.produk{
+  background:#ffb300;
+  color:white;
+}
 
-    .about img {
-      width: 300px;
-      border-radius: 10px;
-    }
+.grid{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
 
-    /* PRODUK */
-    .produk {
-      background: #ffb300;
-      padding: 50px;
-      text-align: center;
-    }
+.card{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  width:250px;
+  color:black;
+}
 
-    .produk h2 {
-      color: white;
-      margin-bottom: 20px;
-    }
+.card img{width:100%;border-radius:10px;}
 
-    .produk-grid {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
+video{width:300px;border-radius:10px;margin-top:20px;}
 
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
-      width: 250px;
-    }
+/* TESTI */
+.testi{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  display:inline-block;
+  margin:10px;
+}
 
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-    }
+/* FOOTER */
+footer{
+  background:#5c3b1e;
+  color:white;
+  padding:40px;
+}
 
-    /* TESTIMONI */
-    .testimoni {
-      padding: 50px;
-      text-align: center;
-    }
-
-    .testi-box {
-      background: white;
-      padding: 20px;
-      margin: 10px;
-      border-radius: 10px;
-      display: inline-block;
-      width: 250px;
-    }
-
-    /* CTA */
-    .cta {
-      background: linear-gradient(#ffb300, #ff9800);
-      padding: 50px;
-      text-align: center;
-      color: white;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #5c3b1e;
-      color: white;
-      padding: 30px;
-      text-align: center;
-    }
-
-    /* WA FLOAT */
-    .wa {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: green;
-      color: white;
-      padding: 15px;
-      border-radius: 50%;
-      text-decoration: none;
-    }
-  </style>
+/* WA */
+.wa{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:green;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+}
+</style>
 
 </head>
 
@@ -184,89 +128,112 @@
 <!-- NAVBAR -->
 
 <nav>
-  <h2>Potato Pops</h2>
-  <div>
-    <a href="#">Beranda</a>
-    <a href="#">Produk</a>
-    <a href="#">Testimoni</a>
-    <a href="https://instagram.com/potatopops.id">Instagram</a>
-    <a href="https://wa.me/628XXXXXXXXXX" class="btn">Order</a>
-  </div>
+  <img src="logo.png.jpeg">
+
+  <ul>
+    <li><a href="#beranda">Beranda</a></li>
+    <li><a href="#tentang">Tentang</a></li>
+    <li><a href="#produk">Produk</a></li>
+    <li><a href="#visi">Visi & Misi</a></li>
+    <li><a href="#testimoni">Testimoni</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+  </ul>
+
+<a href="https://wa.me/6283153392024" class="btn">Order</a>
+
 </nav>
 
 <!-- HERO -->
 
-<section class="hero">
+<section class="hero" id="beranda">
   <div class="hero-text">
-    <h1>Crispy di luar, Lumer di dalam!</h1>
-    <p>Cemilan kekinian yang bikin nagih 🤤</p>
-    <a href="https://wa.me/6283153392024" class="btn">Order Sekarang</a>
+    <h2>Crispy di luar</h2>
+    <h1>LUMER</h1>
+    <h2>di dalam!</h2>
+
+```
+<p>Cemilan kentang keju yang crispy di luar, lumer di dalam 🤤</p>
+
+<a href="https://wa.me/6283153392024" class="btn">Order Sekarang</a>
+```
+
   </div>
 
   <img src="original.jpg.jpeg">
 </section>
 
-<!-- FITUR -->
+<!-- TENTANG -->
 
-<section class="fitur">
-  <div class="fitur-box">Kentang Pilihan</div>
-  <div class="fitur-box">Isi Keju Lumer</div>
-  <div class="fitur-box">Tanpa Pengawet</div>
-</section>
-
-<!-- ABOUT -->
-
-<section class="about">
-  <img src="logo.png.jpeg">
-  <div>
-    <h2>Kenali Potato Pops</h2>
-    <p>Cemilan crispy di luar, lumer di dalam.</p>
-  </div>
+<section id="tentang">
+  <h2>Tentang Kami</h2>
+  <p>Potato Pops hadir sebagai camilan kentang kekinian yang memadukan tekstur crispy di luar denfan isian yang lumer di dalam. dibuat dari kentang pilihan dan bahan berkualitas, sehingga Potato Pops menawarkan pengalaman ngemil yang sehat, lezat dan ramah di kanton, siap menemani semua momen santai, belajar, maupun nongkrong bersama teman.</p>
 </section>
 
 <!-- PRODUK -->
 
-<section class="produk">
-  <h2>Pilihan Rasa Favorit</h2>
+<section class="produk" id="produk">
+  <h2>Produk Kami</h2>
 
-  <div class="produk-grid">
+  <div class="grid">
     <div class="card">
       <img src="original.jpg.jpeg">
-      <h2>Original Cheese</h2>
-      <a href="https://wa.me/6283153392024" class="btn">Order</a>
+      <h3>Original Cheese</h3>
+      <p>Lapisan kentang renyah dengan lelehan keju premium yang creamy di dalamnya. Rasa klasik yang gurih, lembut, dan selalu bikin nagih.</p>
     </div>
 
 ```
 <div class="card">
-  <img src="beef.jpg.jpeg">
-  <h2>Chicken Cheese</h2>
-  <a href="https://wa.me/6283153392024" class="btn">Order</a>
+  <img src="chicken.jpg.jpeg">
+  <h3>Chicken Cheese</h3>
+  <p>Perpaduan kentang renyah, ayam pilihan, dan keju lumer yang meleleh di setiap gigitan. Menghadirkan sensasi gurih yang lezat dan memuaskan.</p>
 </div>
 
 <div class="card">
-  <img src="chicken.jpg.jpeg">
-  <h2>Beef Cheese</h2>
-  <a href="https://wa.me/6283153392024" class="btn">Order</a>
+  <img src="beef.jpg.jpeg">
+  <h3>Beef Cheese</h3>
+  <p>Kentang crispy dengan isian daging sapi berkualitas dan keju premium yang lumer sempurna. Kombinasi rasa gurih dan creamy yang kaya dalam satu gigitan.</p>
 </div>
 ```
 
   </div>
+
+  <!-- VIDEO -->
+
+  <video controls>
+    <source src="potato.mp4.mp4" type="video/mp4">
+  </video>
+</section>
+
+<!-- VISI MISI -->
+
+<section id="visi">
+  <h2>Visi & Misi</h2>
+
+  <p><b>Visi:</b> Menjadi pilihan camilan kentang yang sehat dan lezat, serta disukai semua kalangan dengan harga yang terjangkau.</p>
+  <p><b>Misi:</b> - Menggunakan bahan-bahan premium tanpa pengawet untuk kualitas terbaik.
+- Menyediakan camilan sehat, lezat dan bergizi untuk semua kalangan.
+- Memberikan harga terjangkau tanpa mengorbankan kualitas dan harga.</p>
 </section>
 
 <!-- TESTIMONI -->
 
-<section class="testimoni">
-  <h2>Apa Kata Mereka?</h2>
+<section id="testimoni">
+  <h2>Testimoni</h2>
 
-  <div class="testi-box">"Enak banget!" ⭐⭐⭐⭐⭐</div>
-  <div class="testi-box">"Nagih parah!" ⭐⭐⭐⭐⭐</div>
+  <div class="testi">"Enak banget!" ⭐⭐⭐⭐⭐</div>
+  <div class="testi">"Nagih parah!" ⭐⭐⭐⭐⭐</div>
 </section>
 
-<!-- CTA -->
+<!-- KONTAK -->
 
-<section class="cta">
-  <h2>Siap nemenin momen kamu!</h2>
-  <a href="https://wa.me/6283153392024" class="btn">Order Sekarang</a>
+<section id="kontak">
+  <h2>Kontak</h2>
+
+  <p>WhatsApp: 6283153392024</p>
+  <p>Instagram: @potatopops.id</p>
+
+<a href="https://instagram.com/potatopops.id" class="btn">Instagram</a>
+
 </section>
 
 <!-- FOOTER -->
@@ -275,7 +242,7 @@
   <p>© 2026 Potato Pops</p>
 </footer>
 
-<!-- WA FLOAT -->
+<!-- FLOAT WA -->
 
 <a href="https://wa.me/6283153392024" class="wa">💬</a>
 
