@@ -11,17 +11,9 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 
-:root{
---cream1:#FFF6ED;
---cream2:#FFEBD6;
---orange:#FFB300;
---orange-dark:#FFA000;
---brown:#4E342E;
-}
-
 body{
 font-family:'Poppins',sans-serif;
-background:var(--cream1);
+background:#fff8ef;
 }
 
 /* NAVBAR */
@@ -38,9 +30,13 @@ z-index:1000;
 nav img{width:120px;}
 nav ul{display:flex;list-style:none;}
 nav ul li{margin:0 15px;}
-nav ul li a{text-decoration:none;color:#333;}
+nav ul li a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
 .btn{
-background:var(--orange);
+background:#ffb300;
 padding:10px 20px;
 border-radius:20px;
 color:white;
@@ -54,39 +50,36 @@ justify-content:space-between;
 align-items:center;
 padding:80px 60px;
 flex-wrap:wrap;
-background:var(--cream1);
+background:#fff8ef;
 gap:40px;
 }
 .hero-text{max-width:500px;}
 .hero-text h1{
 font-family:'Fredoka',cursive;
-font-size:95px;
+font-size:120px;
 color:#ff9800;
-line-height:1;
 }
 .hero-text h2{
 font-family:'Fredoka',cursive;
-font-size:38px;
+font-size:50px;
 }
+.hero-text p{margin:20px 0;}
 .hero img{
 width:380px;
 max-width:100%;
+display:block;
+margin:auto;
 }
 
 /* SECTION */
 section{
-padding:90px 60px;
+padding:80px 60px;
 text-align:center;
-}
-
-/* TENTANG */
-#tentang{
-background:var(--cream2);
 }
 
 /* PRODUK */
 .produk{
-background:var(--orange);
+background:#ffb300;
 color:white;
 }
 .grid{
@@ -103,11 +96,21 @@ border-radius:15px;
 width:260px;
 color:black;
 }
-.card img{width:100%;border-radius:10px;}
+.card img{
+width:100%;
+border-radius:10px;
+}
 
 /* HARGA */
-.price{margin-top:10px;font-weight:bold;}
-.old{text-decoration:line-through;color:red;margin-right:8px;}
+.price{
+margin-top:10px;
+font-weight:bold;
+}
+.old{
+text-decoration:line-through;
+color:red;
+margin-right:8px;
+}
 
 /* VIDEO */
 .video-section{
@@ -121,12 +124,7 @@ max-width:700px;
 border-radius:20px;
 }
 
-/* VISI */
-#visi{
-background:var(--cream2);
-}
-
-/* TESTI */
+/* TESTIMONI */
 .testi{
 background:white;
 padding:20px;
@@ -135,44 +133,21 @@ display:inline-block;
 margin:10px;
 }
 
-/* CTA */
-.cta{
-background:var(--orange-dark);
-color:white;
-padding:80px;
-}
-
 /* KONTAK */
-#kontak{
-background:var(--brown);
-color:white;
-padding:80px 60px;
-}
 #kontak a{
-color:#ffcc80;
 text-decoration:none;
+color:#ff9800;
 font-weight:bold;
 }
 
 /* FOOTER */
 footer{
-background:#3e2723;
+background:#5c3b1e;
 color:white;
-padding:50px 20px;
+padding:50px;
+text-align:center;
+width:100%;
 }
-.footer-container{
-max-width:1100px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-flex-wrap:wrap;
-gap:30px;
-}
-.footer-col{
-flex:1;
-min-width:200px;
-}
-footer p{text-align:center;margin-top:30px;font-size:14px;opacity:0.7;}
 
 /* WA FLOAT */
 .wa{
@@ -184,6 +159,7 @@ color:white;
 padding:15px;
 border-radius:50%;
 text-decoration:none;
+font-size:20px;
 }
 </style>
 
@@ -199,7 +175,7 @@ text-decoration:none;
 <li><a href="#beranda">Beranda</a></li>
 <li><a href="#tentang">Tentang Kami</a></li>
 <li><a href="#produk">Produk</a></li>
-<li><a href="#visi">Visi</a></li>
+<li><a href="#visi">Visi & Misi</a></li>
 <li><a href="#testimoni">Testimoni</a></li>
 <li><a href="#kontak">Kontak</a></li>
 </ul>
@@ -213,24 +189,29 @@ text-decoration:none;
 <h2>Crispy di luar</h2>
 <h1>LUMER</h1>
 <h2>di dalam!</h2>
-<p>Cemilan kentang keju yang lezat 🤤</p>
+<p>Cemilan kentang keju yang sehat dan lezat 🤤</p>
 <a href="https://wa.me/6283153392024" class="btn">Order Sekarang</a>
 </div>
-<img src="original.jpg.jpeg">
+<img src="original.jpg.jpeg" alt="Potato Pops">
 </section>
 
 <!-- TENTANG -->
 
 <section id="tentang">
 <h2>Tentang Kami</h2>
-<p>Potato Pops adalah camilan kentang kekinian yang crispy di luar dan lumer di dalam.</p>
+<p>Potato Pops hadir sebagai camilan kentang kekinian yang crispy di luar dan lumer di dalam. Dibuat dari bahan berkualitas tanpa pengawet, cocok untuk semua momen santai.</p>
 </section>
 
 <!-- PRODUK -->
 
 <section class="produk" id="produk">
 <h2>Produk Kami</h2>
-<p>🔥 Spesial Grand Opening 🔥</p>
+
+<p style="margin-top:10px;font-weight:bold;">
+🔥 Spesial Grand Opening 🔥
+</p>
+
+<!-- VIDEO -->
 
 <div class="video-section">
 <video autoplay muted loop>
@@ -243,19 +224,28 @@ text-decoration:none;
 <div class="card">
 <img src="original.jpg.jpeg">
 <h3>Original Cheese</h3>
-<div class="price"><span class="old">12.000</span>10.000</div>
+<p>Keju lumer creamy di dalam kentang crispy.</p>
+<div class="price">
+<span class="old">12.000</span> 10.000
+</div>
 </div>
 
 <div class="card">
 <img src="chicken.jpg.jpeg">
 <h3>Chicken Cheese</h3>
-<div class="price"><span class="old">15.000</span>13.000</div>
+<p>Perpaduan ayam gurih dan keju lumer.</p>
+<div class="price">
+<span class="old">15.000</span> 13.000
+</div>
 </div>
 
 <div class="card">
 <img src="beef.jpg.jpeg">
 <h3>Beef Cheese</h3>
-<div class="price"><span class="old">15.000</span>13.000</div>
+<p>Daging sapi + keju premium super lezat.</p>
+<div class="price">
+<span class="old">15.000</span> 13.000
+</div>
 </div>
 
 </div>
@@ -265,8 +255,8 @@ text-decoration:none;
 
 <section id="visi">
 <h2>Visi & Misi</h2>
-<p><b>Visi:</b> Menjadi camilan terbaik.</p>
-<p><b>Misi:</b> Menggunakan bahan berkualitas.</p>
+<p><b>Visi:</b> Menjadi camilan kentang terbaik dan terjangkau.</p>
+<p><b>Misi:</b> Menggunakan bahan premium dan menjaga kualitas rasa.</p>
 </section>
 
 <!-- TESTIMONI -->
@@ -274,51 +264,31 @@ text-decoration:none;
 <section id="testimoni">
 <h2>Testimoni</h2>
 <div class="testi">"Enak banget!" ⭐⭐⭐⭐⭐</div>
-<div class="testi">"Nagih!" ⭐⭐⭐⭐⭐</div>
-</section>
-
-<!-- CTA -->
-
-<section class="cta">
-<h2>Siap nemenin momen kamu!</h2>
-<a href="https://wa.me/6283153392024" class="btn">Order Sekarang</a>
+<div class="testi">"Nagih parah!" ⭐⭐⭐⭐⭐</div>
 </section>
 
 <!-- KONTAK -->
 
 <section id="kontak">
 <h2>Kontak</h2>
-<p><a href="https://wa.me/6283153392024">WhatsApp</a></p>
-<p><a href="https://instagram.com/potatopops.id">Instagram</a></p>
+
+<p>
+<a href="https://wa.me/6283153392024">WhatsApp: 6283153392024</a>
+</p>
+
+<p>
+<a href="https://instagram.com/potatopops.id">Instagram: @potatopops.id</a>
+</p>
+
 </section>
 
 <!-- FOOTER -->
 
 <footer>
-<div class="footer-container">
-
-<div class="footer-col">
-<h3>Potato Pops</h3>
-<p>Camilan kentang kekinian.</p>
-</div>
-
-<div class="footer-col">
-<h4>Menu</h4>
-<p>Beranda</p>
-<p>Produk</p>
-<p>Kontak</p>
-</div>
-
-<div class="footer-col">
-<h4>Kontak</h4>
-<p>WA: 6283153392024</p>
-<p>@potatopops.id</p>
-</div>
-
-</div>
-
 <p>© 2026 Potato Pops</p>
 </footer>
+
+<!-- FLOAT WA -->
 
 <a href="https://wa.me/6283153392024" class="wa">💬</a>
 
