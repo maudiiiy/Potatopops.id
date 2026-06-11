@@ -7,293 +7,107 @@
 
 <title>PotatoPops.id</title>
 
-<!-- FONT LEBIH LUCU -->
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:#fffaf2;}
 
-html{
-scroll-behavior:smooth;
-}
-
-body{
-background:#fffaf2;
-}
-
-/* NAVBAR */
+/* NAV */
 nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 50px;
-background:#fffaf2;
-position:sticky;
-top:0;
-z-index:1000;
+display:flex;justify-content:space-between;align-items:center;
+padding:20px 50px;background:#fffaf2;position:sticky;top:0;z-index:1000;
 }
-
-nav img{
-width:120px;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-}
-
-nav ul li{
-margin:0 15px;
-}
-
-nav ul li a{
-text-decoration:none;
-color:#333;
-font-weight:500;
-}
-
-nav ul li a:hover{
-color:#ff9800;
-}
-
-.btn{
-background:#ff9800;
-padding:10px 20px;
-border-radius:20px;
-color:white;
-text-decoration:none;
-}
+nav img{width:120px;}
+nav ul{display:flex;list-style:none;}
+nav ul li{margin:0 15px;}
+nav ul li a{text-decoration:none;color:#333;}
+.btn{background:#ff9800;padding:10px 20px;border-radius:20px;color:white;text-decoration:none;}
 
 /* HERO */
 .hero{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:80px 60px;
-flex-wrap:wrap;
-background:#fff3e0; /* cream */
-position:relative;
+display:flex;justify-content:space-between;align-items:center;
+padding:80px 60px;flex-wrap:wrap;background:#fff3e0;position:relative;
 }
+.hero-text{font-family:'Fredoka',sans-serif;}
+.hero-text h1{font-size:90px;color:#ff9800;}
+.hero-text h2{font-size:32px;}
+.hero-text p{margin:20px 0;}
+.hero img{width:350px;border-radius:20px;}
 
-.hero-text{
-max-width:500px;
-font-family:'Fredoka',sans-serif;
-}
-
-.hero-text h1{
-font-size:90px;
-color:#ff9800;
-}
-
-.hero-text h2{
-font-size:32px;
-}
-
-.hero-text p{
-margin:20px 0;
-font-size:18px;
-}
-
-.hero img{
-width:380px;
-border-radius:20px;
-}
-
-/* KEJU DEKOR */
-.cheese{
-position:absolute;
-width:40px;
-opacity:0.2;
-}
-
-.cheese1{top:50px;left:40px;}
-.cheese2{top:150px;left:200px;}
-.cheese3{bottom:50px;right:200px;}
+.cheese{position:absolute;width:40px;opacity:0.2;}
+.c1{top:50px;left:40px;}
+.c2{top:150px;left:200px;}
+.c3{bottom:50px;right:200px;}
 
 /* SECTION */
-section{
-padding:80px 60px;
-text-align:center;
-}
+section{padding:80px 60px;text-align:center;}
 
 /* VIDEO */
-.video-section{
-display:flex;
-justify-content:center;
-}
-
-.video-section video{
-width:70%;
-max-width:700px;
-border-radius:20px;
-}
+.video-section{display:flex;justify-content:center;}
+.video-section video{width:70%;max-width:700px;border-radius:20px;}
 
 /* PRODUK */
-.produk{
-background:#ffb300;
-color:white;
-}
-
-.grid{
-display:flex;
-gap:30px;
-justify-content:center;
-flex-wrap:wrap;
-margin-top:30px;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:15px;
-width:250px;
-color:black;
-box-shadow:0 10px 20px rgba(0,0,0,0.1);
-}
-
-.card img{
-width:100%;
-border-radius:10px;
-}
-
-.price del{
-color:red;
-}
-
-.price b{
-color:green;
-}
-
-.badge{
-background:red;
-color:white;
-padding:5px 10px;
-border-radius:10px;
-font-size:12px;
-margin-bottom:10px;
-display:inline-block;
-}
+.produk{background:#ffb300;color:white;}
+.grid{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;margin-top:30px;}
+.card{background:white;padding:20px;border-radius:15px;width:250px;color:black;}
+.card img{width:100%;border-radius:10px;}
+.price del{color:red;}
+.price b{color:green;}
+.badge{background:red;color:white;padding:5px 10px;border-radius:10px;font-size:12px;margin-bottom:10px;display:inline-block;}
 
 /* TESTI */
-.testi{
-background:white;
-padding:20px;
-border-radius:10px;
-display:inline-block;
-margin:10px;
-}
+.testi{background:white;padding:20px;border-radius:10px;display:inline-block;margin:10px;}
 
-/* KONTAK FULL */
-.kontak{
-background:#5c3b1e;
-color:white;
-padding:80px 60px;
-}
-
-.kontak a{
-color:#ffb300;
-text-decoration:none;
-}
-
-.kontak a:hover{
-color:white;
-}
+/* KONTAK */
+.kontak{background:#5c3b1e;color:white;padding:80px 60px;}
+.kontak a{color:#ffb300;text-decoration:none;}
 
 /* FOOTER */
-footer{
-background:#5c3b1e;
-color:white;
-text-align:center;
-padding:20px;
-}
+footer{background:#5c3b1e;color:white;text-align:center;padding:20px;}
 
-/* WA FLOAT */
-.wa{
-position:fixed;
-bottom:20px;
-right:20px;
-background:green;
-color:white;
-padding:15px;
-border-radius:50%;
-text-decoration:none;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-.hero{
-flex-direction:column;
-text-align:center;
-}
-
-.hero img{
-width:80%;
-margin-top:20px;
-}
-}
+/* WA */
+.wa{position:fixed;bottom:20px;right:20px;background:green;color:white;padding:15px;border-radius:50%;text-decoration:none;}
 </style>
 
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-
 <nav>
 <img src="logo.png.jpeg">
-
 <ul>
 <li><a href="#beranda">Beranda</a></li>
 <li><a href="#tentang">Tentang Kami</a></li>
 <li><a href="#produk">Produk</a></li>
-<li><a href="#visi">Visi & Misi</a></li>
+<li><a href="#visi">Visi</a></li>
 <li><a href="#testimoni">Testimoni</a></li>
 <li><a href="#kontak">Kontak</a></li>
 </ul>
-
 <a href="https://wa.me/6283153392024" class="btn">Order</a>
-
 </nav>
 
-<!-- HERO -->
-
 <section class="hero" id="beranda">
-
 <div class="hero-text">
 <h2>Crispy di luar</h2>
 <h1>LUMER</h1>
 <h2>di dalam!</h2>
-
-<p>Cemilan kentang keju yang sehat dan lezat 🤤</p>
-
+<p>Cemilan kentang keju yang lezat 🤤</p>
 <a href="https://wa.me/6283153392024" class="btn">Order Sekarang</a>
-
 </div>
 
 <img src="original.jpg.jpeg">
 
-<!-- dekor keju -->
-
-<img src="original.jpg.jpeg" class="cheese cheese1">
-<img src="original.jpg.jpeg" class="cheese cheese2">
-<img src="original.jpg.jpeg" class="cheese cheese3">
-
+<img src="original.jpg.jpeg" class="cheese c1">
+<img src="original.jpg.jpeg" class="cheese c2">
+<img src="original.jpg.jpeg" class="cheese c3">
 </section>
-
-<!-- TENTANG -->
 
 <section id="tentang">
 <h2>Tentang Kami</h2>
-<p>Potato Pops hadir sebagai camilan kentang kekinian dengan tekstur crispy di luar dan lumer di dalam, dibuat dari bahan berkualitas untuk pengalaman ngemil terbaik.</p>
+<p>Potato Pops adalah camilan kentang kekinian dengan rasa lezat dan kualitas terbaik.</p>
 </section>
-
-<!-- VIDEO -->
 
 <section class="video-section">
 <video autoplay muted loop>
@@ -301,12 +115,10 @@ margin-top:20px;
 </video>
 </section>
 
-<!-- PRODUK -->
-
 <section class="produk" id="produk">
 <h2>Produk Kami</h2>
 
-<p style="background:white;color:black;display:inline-block;padding:8px 15px;border-radius:10px;font-weight:bold;">
+<p style="background:white;color:black;display:inline-block;padding:8px 15px;border-radius:10px;">
 🔥 Spesial Grand Opening 🔥
 </p>
 
@@ -336,37 +148,20 @@ margin-top:20px;
 </div>
 </section>
 
-<!-- VISI -->
-
 <section id="visi">
 <h2>Visi & Misi</h2>
-<p><b>Visi:</b> Menjadi camilan kentang sehat dan lezat yang disukai semua kalangan.</p>
-<p><b>Misi:</b> Menggunakan bahan premium, tanpa pengawet, dan harga terjangkau.</p>
+<p>Menjadi camilan favorit semua kalangan.</p>
 </section>
-
-<!-- TESTI -->
 
 <section id="testimoni">
 <h2>Testimoni</h2>
 <div class="testi">"Enak banget!" ⭐⭐⭐⭐⭐</div>
-<div class="testi">"Nagih parah!" ⭐⭐⭐⭐⭐</div>
 </section>
-
-<!-- KONTAK -->
 
 <section class="kontak" id="kontak">
 <h2>Kontak</h2>
-
-<p>
-WhatsApp:
-<a href="https://wa.me/6283153392024">6283153392024</a>
-</p>
-
-<p>
-Instagram:
-<a href="https://instagram.com/potatopops.id">@potatopops.id</a>
-</p>
-
+<p>WhatsApp: <a href="https://wa.me/6283153392024">6283153392024</a></p>
+<p>Instagram: <a href="https://instagram.com/potatopops.id">@potatopops.id</a></p>
 </section>
 
 <footer>
