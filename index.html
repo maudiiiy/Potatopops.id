@@ -9,23 +9,45 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-html{scroll-behavior:smooth;}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
 
-body{background:#fffaf2;}
+html{
+  scroll-behavior:smooth;
+}
 
-/* NAVBAR */
+body{
+  background:#fffaf2;
+}
+
+/* NAVBAR FIX */
 nav{
   display:flex;
   justify-content:space-between;
   align-items:center;
   padding:20px 50px;
+  background:#fffaf2;
+  position:sticky;
+  top:0;
+  z-index:1000;
 }
 
-nav img{width:120px;}
+nav img{
+  width:120px;
+}
 
-nav ul{display:flex;list-style:none;}
-nav ul li{margin:0 15px;}
+nav ul{
+  display:flex;
+  list-style:none;
+}
+
+nav ul li{
+  margin:0 15px;
+}
 
 nav ul li a{
   text-decoration:none;
@@ -35,7 +57,6 @@ nav ul li a{
 
 nav ul li a:hover{
   color:#ff9800;
-  transition:0.3s;
 }
 
 .btn{
@@ -46,26 +67,35 @@ nav ul li a:hover{
   text-decoration:none;
 }
 
-/* HERO */
+/* HERO FIX */
 .hero{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:60px;
+  padding:80px 60px;
   flex-wrap:wrap;
   background:#fff3e0;
   position:relative;
+}
+
+.hero-text{
+  position:relative;
+  z-index:1;
 }
 
 .hero-text h1{
   font-size:90px;
   color:#ff9800;
   font-weight:700;
-  letter-spacing:2px;
 }
 
-.hero-text h2{font-size:30px;}
-.hero-text p{margin:20px 0;}
+.hero-text h2{
+  font-size:30px;
+}
+
+.hero-text p{
+  margin:20px 0;
+}
 
 .hero img{
   width:380px;
@@ -73,15 +103,19 @@ nav ul li a:hover{
   box-shadow:0 20px 40px rgba(0,0,0,0.2);
 }
 
-/* dekor keju */
+/* dekor (tidak ganggu lagi) */
 .cheese{
   position:absolute;
   width:50px;
-  opacity:0.3;
+  opacity:0.2;
+  z-index:0;
 }
 
 /* SECTION */
-section{padding:60px;text-align:center;}
+section{
+  padding:60px;
+  text-align:center;
+}
 
 /* VIDEO */
 .video-section{
@@ -94,11 +128,6 @@ section{padding:60px;text-align:center;}
   max-width:700px;
   border-radius:20px;
   box-shadow:0 10px 30px rgba(0,0,0,0.2);
-}
-
-.video-section video:hover{
-  transform:scale(1.03);
-  transition:0.3s;
 }
 
 /* PRODUK */
@@ -133,8 +162,13 @@ section{padding:60px;text-align:center;}
   transition:0.3s;
 }
 
-.price del{color:red;}
-.price b{color:green;}
+.price del{
+  color:red;
+}
+
+.price b{
+  color:green;
+}
 
 .badge{
   background:red;
@@ -146,7 +180,7 @@ section{padding:60px;text-align:center;}
   margin-bottom:10px;
 }
 
-/* TESTI */
+/* TESTIMONI */
 .testi{
   background:white;
   padding:20px;
@@ -156,7 +190,7 @@ section{padding:60px;text-align:center;}
   box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* KONTAK */
+/* KONTAK FULL */
 .kontak{
   background:#5c3b1e;
   color:white;
@@ -193,6 +227,10 @@ footer{
 
 /* RESPONSIVE */
 @media(max-width:768px){
+  nav{
+    flex-direction:column;
+  }
+
   .hero{
     flex-direction:column;
     text-align:center;
@@ -201,10 +239,6 @@ footer{
   .hero img{
     width:80%;
     margin-top:20px;
-  }
-
-  nav{
-    flex-direction:column;
   }
 }
 </style>
@@ -252,14 +286,14 @@ footer{
 
   <!-- dekor -->
 
-  <img src="original.jpg.jpeg" class="cheese" style="top:80px;left:40px;">
+  <img src="original.jpg.jpeg" class="cheese" style="top:60px;left:40px;">
 </section>
 
 <!-- TENTANG -->
 
 <section id="tentang">
   <h2>Tentang Kami</h2>
-  <p>Potato Pops adalah camilan kentang kekinian dengan tekstur crispy di luar dan lumer di dalam.</p>
+  <p>Potato Pops adalah camilan kentang kekinian dengan tekstur crispy di luar dan lumer di dalam, dibuat dari bahan berkualitas untuk pengalaman ngemil terbaik.</p>
 </section>
 
 <!-- VIDEO -->
@@ -310,20 +344,20 @@ footer{
   </div>
 </section>
 
-<!-- VISI -->
+<!-- VISI MISI -->
 
 <section id="visi">
   <h2>Visi & Misi</h2>
-  <p><b>Visi:</b> Menjadi camilan favorit semua kalangan.</p>
-  <p><b>Misi:</b> Menyajikan makanan berkualitas dan terjangkau.</p>
+  <p><b>Visi:</b> Menjadi camilan kentang favorit semua kalangan.</p>
+  <p><b>Misi:</b> Menyajikan produk berkualitas, sehat, dan terjangkau.</p>
 </section>
 
-<!-- TESTI -->
+<!-- TESTIMONI -->
 
 <section id="testimoni">
   <h2>Testimoni</h2>
   <div class="testi">"Enak banget!" ⭐⭐⭐⭐⭐</div>
-  <div class="testi">"Nagih!" ⭐⭐⭐⭐⭐</div>
+  <div class="testi">"Nagih parah!" ⭐⭐⭐⭐⭐</div>
 </section>
 
 <!-- KONTAK -->
