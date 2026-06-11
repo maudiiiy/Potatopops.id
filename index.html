@@ -11,7 +11,7 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
-body{background:#fff8ef;}
+body{background:#fffaf2;}
 
 /* NAVBAR */
 nav{
@@ -23,22 +23,17 @@ nav{
 
 nav img{width:120px;}
 
-nav ul{
-  display:flex;
-  list-style:none;
-}
-
-nav ul li{
-  margin:0 15px;
-}
+nav ul{display:flex;list-style:none;}
+nav ul li{margin:0 15px;}
 
 nav ul li a{
   text-decoration:none;
   color:#333;
+  font-weight:500;
 }
 
 .btn{
-  background:#ffb300;
+  background:#ff9800;
   padding:10px 20px;
   border-radius:20px;
   color:white;
@@ -51,28 +46,46 @@ nav ul li a{
   align-items:center;
   padding:60px;
   flex-wrap:wrap;
+  background:#fff3e0;
 }
 
 .hero-text h1{
-  font-size:70px;
+  font-size:80px;
   color:#ff9800;
+  font-weight:700;
 }
 
-.hero-text p{
-  margin:20px 0;
+.hero-text h2{
+  font-size:30px;
 }
 
-.hero img{
-  width:400px;
+.hero-text p{margin:20px 0;}
+
+.hero img{width:400px;}
+
+/* KEJU */
+.cheese{
+  position:absolute;
+  width:40px;
 }
 
 /* SECTION */
 section{padding:60px;text-align:center;}
 
-.produk{
-  background:#ffb300;
-  color:white;
+/* VIDEO */
+.video-section{
+  display:flex;
+  justify-content:center;
 }
+
+.video-section video{
+  width:70%;
+  max-width:700px;
+  border-radius:20px;
+}
+
+/* PRODUK */
+.produk{background:#ffb300;color:white;}
 
 .grid{
   display:flex;
@@ -91,19 +104,9 @@ section{padding:60px;text-align:center;}
 
 .card img{width:100%;border-radius:10px;}
 
-.video-section {
-  display: flex;
-  justify-content: center;
-  padding: 40px 20px;
-}
+.price del{color:red;}
+.price b{color:green;}
 
-.video-section video {
-  width: 80%;
-  max-width: 800px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-  
 /* TESTI */
 .testi{
   background:white;
@@ -113,14 +116,21 @@ section{padding:60px;text-align:center;}
   margin:10px;
 }
 
+/* KONTAK FULL */
+.kontak{
+  background:#5c3b1e;
+  color:white;
+}
+
 /* FOOTER */
 footer{
   background:#5c3b1e;
   color:white;
-  padding:40px;
+  text-align:center;
+  padding:20px;
 }
 
-/* WA */
+/* WA FLOAT */
 .wa{
   position:fixed;
   bottom:20px;
@@ -143,9 +153,9 @@ footer{
 
   <ul>
     <li><a href="#beranda">Beranda</a></li>
-    <li><a href="#tentangkami">Tentang Kami</a></li>
+    <li><a href="#tentang">Tentang</a></li>
     <li><a href="#produk">Produk</a></li>
-    <li><a href="#visi">Visi & Misi</a></li>
+    <li><a href="#visi">Visi Misi</a></li>
     <li><a href="#testimoni">Testimoni</a></li>
     <li><a href="#kontak">Kontak</a></li>
   </ul>
@@ -159,95 +169,111 @@ footer{
 <section class="hero" id="beranda">
   <div class="hero-text">
     <h2>Crispy di luar</h2>
-    <h1>LUMER</h1>
+    <h1>LUMER 🧀</h1>
     <h2>di dalam!</h2>
 
-<p>Cemilan kentang keju yang sehat dan lezat 🤤</p>
+```
+<p>Cemilan kentang keju yang lezat 🤤</p>
 
 <a href="https://wa.me/6283153392024" class="btn">Order Sekarang</a>
+```
 
   </div>
 
   <img src="original.jpg.jpeg">
+
+  <!-- dekor keju -->
+
+  <img src="original.jpg.jpeg" class="cheese" style="top:100px;left:50px;">
 </section>
 
 <!-- TENTANG -->
 
 <section id="tentang">
   <h2>Tentang Kami</h2>
-  <p>Potato Pops hadir sebagai camilan kentang kekinian yang memadukan tekstur crispy di luar denfan isian yang lumer di dalam. dibuat dari kentang pilihan dan bahan berkualitas, sehingga Potato Pops menawarkan pengalaman ngemil yang sehat, lezat dan ramah di kanton, siap menemani semua momen santai, belajar, maupun nongkrong bersama teman.</p>
+  <p>Potato Pops adalah camilan kentang kekinian dengan isian lumer dan bahan berkualitas tinggi.</p>
 </section>
 
-<!-- PRODUK -->
-
-<section class="produk" id="produk">
-  <h2>Produk Kami</h2>
-
-</div>
-
-  <!-- VIDEO -->
+<!-- VIDEO -->
 
 <section class="video-section">
   <video autoplay muted loop>
     <source src="potato.mp4.mp4" type="video/mp4">
   </video>
 </section>
-  
+
+<!-- PRODUK -->
+
+<section class="produk" id="produk">
+  <h2>Produk Kami</h2>
+  <p style="background:white;color:black;display:inline-block;padding:5px 15px;border-radius:10px;">
+    🔥 Spesial Grand Opening 🔥
+  </p>
+
   <div class="grid">
-    <div class="card">
-      <img src="original.jpg.jpeg">
-      <h3>Original Cheese</h3>
-      <p>Lapisan kentang renyah dengan lelehan keju premium yang creamy di dalamnya. Rasa klasik yang gurih, lembut, dan selalu bikin nagih.</p>
-    </div>
+
+```
+<div class="card">
+  <img src="original.jpg.jpeg">
+  <h3>Original Cheese</h3>
+  <p class="price"><del>12.000</del> <b>10.000</b></p>
+</div>
 
 <div class="card">
   <img src="chicken.jpg.jpeg">
   <h3>Chicken Cheese</h3>
-  <p>Perpaduan kentang renyah, ayam pilihan, dan keju lumer yang meleleh di setiap gigitan. Menghadirkan sensasi gurih yang lezat dan memuaskan.</p>
+  <p class="price"><del>15.000</del> <b>13.000</b></p>
 </div>
 
 <div class="card">
   <img src="beef.jpg.jpeg">
   <h3>Beef Cheese</h3>
-  <p>Kentang crispy dengan isian daging sapi berkualitas dan keju premium yang lumer sempurna. Kombinasi rasa gurih dan creamy yang kaya dalam satu gigitan.</p>
+  <p class="price"><del>15.000</del> <b>13.000</b></p>
 </div>
+```
 
-<!-- VISI MISI -->
+  </div>
+</section>
+
+<!-- VISI -->
 
 <section id="visi">
   <h2>Visi & Misi</h2>
-
-  <p><b>Visi:</b> Menjadi pilihan camilan kentang yang sehat dan lezat, serta disukai semua kalangan dengan harga yang terjangkau.</p>
-  <p><b>Misi:</b> Menggunakan bahan-bahan premium tanpa pengawet untuk kualitas terbaik. Menyediakan camilan sehat, lezat dan bergizi untuk semua kalangan. Memberikan harga terjangkau tanpa mengorbankan kualitas dan harga.</p>
+  <p><b>Visi:</b> Menjadi camilan favorit semua kalangan.</p>
+  <p><b>Misi:</b> Menyajikan makanan berkualitas dan terjangkau.</p>
 </section>
 
-<!-- TESTIMONI -->
+<!-- TESTI -->
 
 <section id="testimoni">
   <h2>Testimoni</h2>
-
   <div class="testi">"Enak banget!" ⭐⭐⭐⭐⭐</div>
-  <div class="testi">"Nagih parah!" ⭐⭐⭐⭐⭐</div>
+  <div class="testi">"Nagih!" ⭐⭐⭐⭐⭐</div>
 </section>
 
 <!-- KONTAK -->
 
-<section id="kontak">
+<section class="kontak" id="kontak">
   <h2>Kontak</h2>
 
-  <p>WhatsApp: 6283153392024</p> <a href="https://wa.me/6283153392024"</a>
-  <p>Instagram: @potatopops.id</p> <a href="https://instagram.com/potatopops.id"</a>
+  <p>
+    WhatsApp: 
+    <a href="https://wa.me/6283153392024" style="color:#ffb300;">
+      6283153392024
+    </a>
+  </p>
 
-  
+  <p>
+    Instagram: 
+    <a href="https://instagram.com/potatopops.id" style="color:#ffb300;">
+      @potatopops.id
+    </a>
+  </p>
 </section>
-
-<!-- FOOTER -->
 
 <footer>
   <p>© 2026 Potato Pops</p>
 </footer>
-
-<!-- FLOAT WA -->
 
 <a href="https://wa.me/6283153392024" class="wa">💬</a>
 
