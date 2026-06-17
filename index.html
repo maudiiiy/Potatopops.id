@@ -61,10 +61,10 @@ background:var(--cream);
 gap:40px;
 }
 
-/* 🔥 INI YANG KITA TAMBAH */
+/* TETAP ADA (tidak dihapus) */
 .hero-text{
 max-width:520px;
-transform: translateX(85px); /* geser ke kanan */
+transform: translateX(85px);
 }
 
 .hero-text h2{
@@ -84,10 +84,10 @@ line-height:1;
 .hero img{
 width:420px;
 max-width:100%;
-transform: translateX(-85px); /* geser ke kiri */
+transform: translateX(-85px);
 }
 
-/* SECTION UMUM */
+/* SECTION */
 section{
 padding:90px 60px;
 text-align:center;
@@ -140,25 +140,12 @@ color:red;
 margin-right:8px;
 }
 
-/* DESKRIPSI PRODUK */
 .desc{
 margin-top:10px;
 font-size:14px;
 color:#666;
 line-height:1.6;
 min-height:45px;
-}
-
-/* VIDEO */
-.video-section{
-display:flex;
-justify-content:center;
-margin-top:40px;
-}
-.video-section video{
-width:70%;
-max-width:700px;
-border-radius:20px;
 }
 
 /* VIDEO */
@@ -218,6 +205,68 @@ padding:15px;
 border-radius:50%;
 text-decoration:none;
 }
+
+/* 🔥 TAMBAHAN SAJA (tidak menghapus apapun) */
+@media (max-width:768px){
+
+nav{
+padding:15px 20px;
+}
+
+/* menu disembunyikan biar rapi */
+nav ul{
+display:none;
+}
+
+/* HERO jadi vertikal */
+.hero{
+flex-direction:column;
+text-align:center;
+padding:60px 20px;
+}
+
+/* override TANPA hapus class */
+.hero-text{
+transform:none;
+}
+
+.hero img{
+transform:none;
+width:250px;
+margin-top:20px;
+}
+
+/* font diperkecil */
+.hero-text h1{
+font-size:60px;
+}
+
+.hero-text h2{
+font-size:24px;
+}
+
+/* section */
+section{
+padding:60px 20px;
+}
+
+/* produk */
+.grid{
+flex-direction:column;
+align-items:center;
+}
+
+/* video */
+.video-section video{
+width:100%;
+}
+
+/* kontak */
+#kontak{
+padding:50px 20px;
+}
+
+}
 </style>
 
 </head>
@@ -225,7 +274,6 @@ text-decoration:none;
 <body>
 
 <!-- NAVBAR -->
-
 <nav>
 <img src="logo.png.jpeg">
 <ul>
@@ -240,7 +288,6 @@ text-decoration:none;
 </nav>
 
 <!-- HERO -->
-
 <section class="hero" id="beranda">
 <div class="hero-text">
 <h2>Crispy di luar</h2>
