@@ -29,21 +29,21 @@ nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:8px 10px;
+padding:5px 15px;
 background:rgba(255,255,255,0.9);
 backdrop-filter:blur(5px);
 position:sticky;
 top:0;
 z-index:1000;
 }
-nav img{width:120px;}
+nav img{width:90px;}
 nav ul{display:flex;list-style:none;}
 nav ul li{margin:0 15px;}
 nav ul li a{text-decoration:none;color:#333;font-weight:500;}
 
 .btn{
 background:var(--orange);
-padding:10px 22px;
+padding:6px 16px;
 border-radius:25px;
 color:white;
 text-decoration:none;
@@ -53,7 +53,7 @@ font-weight:600;
 /* HERO */
 .hero{
 display:flex;
-justify-content:space-between;
+justify-content:center;
 align-items:center;
 padding:90px 60px;
 flex-wrap:wrap;
@@ -62,8 +62,7 @@ gap:40px;
 }
   
 .hero-text{
-max-width:520px;
-transform: translateX(85px);
+  max-width:520px;
 }
 
 .hero-text h2{
@@ -81,11 +80,25 @@ line-height:1;
 .hero-text p{margin:20px 0;}
 
 .hero img{
-width:420px;
-max-width:100%;
-transform: translateX(-85px);
+  width:420px;
+  max-width:100%;
 }
 
+@media (max-width:1024px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero img{
+    width:280px;
+  }
+
+  .hero-text h1{
+    font-size:70px;
+  }
+}
+  
 /* SECTION */
 section{
 padding:90px 60px;
